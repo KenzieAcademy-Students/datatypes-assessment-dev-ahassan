@@ -26,7 +26,8 @@ textArea.addEventListener("keyup", function() {
 
   // Count characters and words
   let numCharacters = text.length;
-  let words = text.match(/[^\s]+/g);
+  let words = text.match(/[^\s\?]+/g)
+
   let numWords = words ? words.length : 0;
 
   // Finding the longest and shortest words:
@@ -83,3 +84,4 @@ textArea.addEventListener("keyup", function() {
   `;
   results.innerHTML = output;
 });
+
